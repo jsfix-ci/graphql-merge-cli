@@ -1,0 +1,36 @@
+{
+  "name": "graphql-merge-cli",
+  "version": "0.0.3",
+  "description": "CLI to merge graphql schemas into a single schema",
+  "bin": {
+    "graphql-merge-cli": "cli.js"
+  },
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyas-a/graphql-merge-cli.git"
+  },
+  "keywords": [
+    "graphql",
+    "schema",
+    "merge",
+    "cli"
+  ],
+  "author": "Shreyas Agarkar <shreyas.a24@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyas-a/graphql-merge-cli/issues"
+  },
+  "homepage": "https://github.com/shreyas-a/graphql-merge-cli#readme",
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.2.5",
+    "@graphql-tools/merge": "^6.2.7",
+    "commander": "^7.0.0",
+    "graphql": "^15.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
