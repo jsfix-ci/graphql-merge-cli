@@ -8,10 +8,9 @@ const merge = require("./merge");
 
 module.exports = (path, name) => {
     // Loading all schema files under the received path
-    // todo: dirty way of getting the root directory and appending the passed path to it
     const pathToBeSearched = join(__dirname, "../", `${path}/**/*.graphql`);
 
-    console.log(`Searching in ${pathToBeSearched}`);
+    console.log(`Searching for graphql schema files in ${pathToBeSearched}`);
     const files = loadFilesSync(pathToBeSearched);
 
     // Merging all schema files
@@ -20,5 +19,5 @@ module.exports = (path, name) => {
     // Creating the final combined file
     fs.writeFileSync(name, combinedFile);
 
-    console.log(`Scanned all schema files under ${path} and created a combined schema file named ${name}`);
+    console.log(`Successfully created a combined schema file named ${name}`);
 };
