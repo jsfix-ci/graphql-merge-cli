@@ -13,6 +13,8 @@ module.exports = (path, name) => {
     console.log(`Searching for graphql schema files in ${pathToBeSearched}`);
     const files = loadFilesSync(pathToBeSearched);
 
+    console.log(`Found ${files.length} for merging`);
+
     // Merging all schema files
     const combinedFile = merge(files);
     
