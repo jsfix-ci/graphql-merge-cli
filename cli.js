@@ -28,6 +28,8 @@ program.parse();
  */
 const { path, name } = program.opts();
 
+console.log(`Running graphql-merge-cli version - ${package.version}`);
+
 /**
  * Calling GraphqlMerge
  */

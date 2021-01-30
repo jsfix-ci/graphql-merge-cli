@@ -1,6 +1,6 @@
 {
   "name": "graphql-merge-cli",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "CLI to merge graphql schemas into a single schema",
   "bin": {
     "graphql-merge-cli": "cli.js"
