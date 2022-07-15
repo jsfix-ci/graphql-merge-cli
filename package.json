@@ -27,7 +27,7 @@
   "dependencies": {
     "@graphql-tools/load-files": "^6.2.5",
     "@graphql-tools/merge": "^6.2.7",
-    "commander": "^7.0.0",
+    "commander": "^8.3.0",
     "graphql": "^15.4.0"
   },
   "devDependencies": {
